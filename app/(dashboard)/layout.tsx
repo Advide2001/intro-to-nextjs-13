@@ -1,9 +1,10 @@
-import React from "react";
+import "@/styles/global.css";
 
-interface Props {}
-
-const layout = () => {
-  return <div></div>;
-};
-
-export default layout;
+export default function DashboardRootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head />
+      <body className=" bg-zinc-500 p-6">{children}</body>
+    </html>
+  );
+}
